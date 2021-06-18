@@ -1,7 +1,7 @@
 ## Carto SQL API – Umkreissuche  
 Wir stellen hier eine Vorlage zur Verfügung,
 mit der gezeigt wird wie Adressen aus einem bestimmten Radius ermittelt werden können.
-Dies soll nur als Idee/Ansatz für ähnlichgelagerte Projekte dienen! 
+Diese Vorlage dient nur als Idee/Ansatz für ähnlichgelagerte Projekte! 
 
 
 ### Live-Demo:
