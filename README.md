@@ -11,7 +11,7 @@ https://raw.githack.com/plzTeam/carto-umkreis-preview/master/index.html
 Die Basisanwendung von Carto ist OpenSource und somit vorallem kostentechnisch skalierbar.
 Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglichkeit
 (integriertes Auth, APIs, vereinfachte Map-Einbindungen).
-Die Daten können entweder über die SQL-API oder mit einer direkten Datenbankverbindung manipuliert werden.
+Die Daten können entweder über die SQL-API oder mit einer direkten Datenbankverbindung abgefragt oder manipuliert werden.
 ### Carto beziehen
 + Der offizielle Anbieter ist [Carto.com](https://carto.com/)
 + Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis der OpenSource-Quelle
