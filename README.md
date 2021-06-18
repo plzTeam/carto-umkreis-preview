@@ -37,7 +37,7 @@ Ganz abgesehen von der Entwicklersicht bietet Carto eine umfangreiche Nutzerumge
 mit Map-Editor und vielen weiteren Features.
 
 ### Carto beziehen
-+ Der offizielle Anbieter ist [Carto.com](https://carto.com/) - ebenfalls dort: die umfangreiche [Dokumentation](https://docs.carto.com/)
++ Der offizielle Anbieter ist [Carto.com](https://carto.com/) - dort ist auch die umfangreiche [Dokumentation](https://docs.carto.com/) zu finden
 + Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis des unten genannten Repository
 + Übrig bleibt das Open-Source-Repository auf [github/CartoDB](https://github.com/CartoDB) für das Aufsetzen einer eigenen Server-Instanz
 
