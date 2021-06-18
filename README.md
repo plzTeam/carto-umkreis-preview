@@ -1,5 +1,5 @@
 ## Carto SQL API – Umkreissuche  
-Wir stellen hier eine Vorlage zur Verfügung,
+Wir stellen hier eine Script-Vorlage zur Verfügung,
 mit der gezeigt wird, wie Adressen innerhalb eines bestimmten Radius ermittelt werden können.
 Diese Vorlage dient nur als Idee/Ansatz für ähnlichgelagerte Projekte! 
 
@@ -31,6 +31,6 @@ Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-
 + https://github.com/CartoDB/cartodb-nodejs
 
 ### Bekannte Stolpersteine
-+ Projektionen: die gängigen Koordinatensysteme für die visuelle Kartendarstellung
++ Projektion: die gängigen Koordinatensysteme für die visuelle Kartendarstellung
   sind nicht für Berechnungen im metrischen System nutzbar. Folglich muss zur Berechnung
   das Geometrie-Feld der Carto-Datenbank entsprechend transformiert werden.

@@ -60,6 +60,8 @@ window.onload = function () {
             $.map(layers, function(layer, key) {
                 layer.redraw();
             });
+            // fitBounds
+            map.panTo([center_lat, center_lon])
             // build map layers
             let radius = $("#form-radius").val();
             circle = L.circle([center_lat, center_lon], radius * 1000, {color: '#0d6efd', 'clickable': false}).addTo(map);
