@@ -17,6 +17,10 @@ Außerdem wird anhand visueller und tabellarischer Darstellung die Ladegeschwind
 komplexer GIS-Abfragen (Umkreisberechnung) demonstriert.
 Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes gezeigt. 
 
+### Verwendete Testdaten
+Es ist nicht möglich über diese App individuelle Daten einzupflegen, alle Testdaten werden 
+über [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
+
 ## Warum Carto?
 Die Basisanwendung von Carto ist OpenSource und somit vorallem kostentechnisch skalierbar.
 Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglichkeit
