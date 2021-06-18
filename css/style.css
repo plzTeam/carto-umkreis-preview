@@ -1,0 +1,28 @@
+a, a:hover {
+    color: white !important;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:hover {
+    color: #bbb !important;
+}
+div.cartodb-searchbox {
+    width: 50% !important;
+}
+
+div.cartodb-searchbox input.text {
+    width: 90% !important;
+}
+.leaflet-container {
+    background: #212529;
+}
+.leaflet-container .leaflet-control-attribution {
+    background: none;
+}
+.cartodb-infowindow ul {
+    list-style: none;
+    padding: 0px 2rem;
+}
+.CDB-infowindow-header.CDB-infowindow-headerBg  {
+    background: #35aae5 !important;
+}
