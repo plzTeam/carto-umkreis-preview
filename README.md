@@ -17,3 +17,5 @@ Die Daten können entweder über die SQL-API oder mit einer direkten Datenbankve
 + Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis der OpenSource-Quelle
 + Übrig bleibt das OpenSource-Repository auf [github/CartoDB](https://github.com/CartoDB)
 
+### Interessante Verweise für die Weiterentwicklung   
++ https://github.com/CartoDB/cartodb-nodejs
