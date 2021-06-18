@@ -28,8 +28,8 @@ Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglich
 Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
 ### Carto beziehen
 + Der offizielle Anbieter ist [Carto.com](https://carto.com/)
-+ Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis der OpenSource-Quelle
-+ Übrig bleibt das OpenSource-Repository auf [github/CartoDB](https://github.com/CartoDB) für das Aufsetzen einer eigenen Server-Instanz
++ Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis der unten genannten Repository
++ Übrig bleibt das Open-Source-Repository auf [github/CartoDB](https://github.com/CartoDB) für das Aufsetzen einer eigenen Server-Instanz
 
 ### Interessante Verweise für die Weiterentwicklung   
 + https://github.com/CartoDB/cartodb-nodejs
