@@ -14,7 +14,7 @@ um ein Zentrum ermittelbar ist.
 Die Anwendung soll aufzeigen, wie clientseitig Datensätze
 auf einer entfernten Carto-Datenbank erzeugt, entfernt und editiert werden können.
 Außerdem wird anhand visueller und tabellarischer Darstellung die Ladegeschwindigkeit
-komplexer GIS-Abfragen (Umkreisberechnung) demonstriert.
+komplexer GIS-Abfragen (hier Umkreisberechnung) demonstriert.
 Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes gezeigt. 
 
 ### Verwendete Testdaten
@@ -22,9 +22,9 @@ Es ist nicht möglich über diese App individuelle Daten einzupflegen, alle Test
 über die [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
 
 ## Warum Carto?
-Die Basisanwendung von Carto ist OpenSource und somit vorallem kostentechnisch skalierbar.
+Die Basisanwendung von Carto ist Open-Source und somit vorallem kostentechnisch skalierbar.
 Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglichkeit
-(integriertes Auth, APIs, vereinfachte Map-Einbindungen).
+(Zugangskontrolle, APIs, vereinfachte Visualisierung und Map-Einbindungen).
 Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
 ### Carto beziehen
 + Der offizielle Anbieter ist [Carto.com](https://carto.com/)
