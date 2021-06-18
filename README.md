@@ -18,13 +18,14 @@ komplexer GIS-Abfragen (hier Umkreisberechnung) demonstriert.
 Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes gezeigt. 
 
 ### Verwendete Testdaten
-Es ist nicht möglich über diese App individuelle Daten einzupflegen, alle Testdaten werden 
-über die [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
-Importfähige Grunddaten (bspw. via Excel) sollten folgende Spalten beinhalten:
+Alle Testdaten werden über die [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
+Es ist daher nicht möglich über diese App individuelle Daten einzupflegen.
+
+Für eine etwaige Import-Erweiterung sollten Grunddaten (bspw. via Excel) folgende Spalten enthalten:
 
 x | y |  city | name | category
 ---|---|-----|------|-----
-Breitengrad | Längengrad | (text) | (text) | 1, 2 od. 3
+Number: (Breitengrad) | Number: (Längengrad) | String: (text) | String: (text) | Number: 1, 2 od. 3
 
 ## Warum Carto?
 Die Basisanwendung von Carto ist Open-Source und somit vorallem kostentechnisch skalierbar.
