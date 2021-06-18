@@ -8,12 +8,12 @@ https://raw.githack.com/plzTeam/carto-umkreis-preview/master/index.html
 
 ## Präsentation - use case
 Dieses hier umgesetzte Anwendungsbeispiel bezieht sich auf kategorisierte und geolokalisierte Zielgruppen. 
-Jeder Teilnehmer (Datensatz) besteht daher aus einer Punktkoordinate welche innerhalb der Beispielanwendung
+Jeder Teilnehmer (Datensatz) besteht daher aus einer Punktkoordinate, welche innerhalb der Beispielanwendung
 um ein Zentrum ermittelbar ist.
 
 Die Anwendung soll aufzeigen, wie clientseitig Datensätze
 auf einer entfernten Carto-Datenbank erzeugt, entfernt und editiert werden können.
-Außerdem wird anhand visueller und tabellarischer Darstellung die Ladegschwindigkeit
+Außerdem wird anhand visueller und tabellarischer Darstellung die Ladegeschwindigkeit
 komplexer GIS-Abfragen (Umkreisberechnung) demonstriert.
 Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes gezeigt. 
 
@@ -29,3 +29,8 @@ Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-
 
 ### Interessante Verweise für die Weiterentwicklung   
 + https://github.com/CartoDB/cartodb-nodejs
+
+### Bekannte Stolpersteine
++ Projektionen: die gängigen Koordinatensysteme für die visuelle Kartendarstellung
+  sind nicht für Berechnungen im metrischen System nutzbar. Folglich muss zur Berechnung
+  das Geometrie-Feld der Carto-Datenbank entsprechend transformiert werden.
