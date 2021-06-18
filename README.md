@@ -31,7 +31,7 @@ Number: (Breitengrad) | Number: (Längengrad) | String: (text) | String: (text) 
 Die Basisanwendung von Carto ist Open-Source und somit vorallem kostentechnisch skalierbar.
 Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglichkeit
 (Zugangskontrolle, APIs, vereinfachte Visualisierung und Map-Einbindungen).
-Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
+Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
 
 Ganz abgesehen von der Entwicklersicht bietet Carto eine umfangreiche Nutzerumgebung
 mit Map-Editor und vielen weiteren Features.
