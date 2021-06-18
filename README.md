@@ -19,7 +19,7 @@ Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes geze
 
 ### Verwendete Testdaten
 Es ist nicht möglich über diese App individuelle Daten einzupflegen, alle Testdaten werden 
-über [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
+über die [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
 
 ## Warum Carto?
 Die Basisanwendung von Carto ist OpenSource und somit vorallem kostentechnisch skalierbar.
