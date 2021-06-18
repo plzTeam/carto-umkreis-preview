@@ -32,8 +32,12 @@ Die Basisanwendung von Carto ist Open-Source und somit vorallem kostentechnisch 
 Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglichkeit
 (Zugangskontrolle, APIs, vereinfachte Visualisierung und Map-Einbindungen).
 Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
+
+Ganz abgesehen von der Entwicklersicht bietet Carto eine umfangreiche Nutzerumgebung
+mit Map-Editor und vielen weiteren Features.
+
 ### Carto beziehen
-+ Der offizielle Anbieter ist [Carto.com](https://carto.com/)
++ Der offizielle Anbieter ist [Carto.com](https://carto.com/) - ebenfalls dort: die umfangreiche [Dokumentation](https://docs.carto.com/)
 + Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis des unten genannten Repository
 + Übrig bleibt das Open-Source-Repository auf [github/CartoDB](https://github.com/CartoDB) für das Aufsetzen einer eigenen Server-Instanz
 
