@@ -1,7 +1,7 @@
 ## Carto SQL API – Umkreissuche  
 Wir stellen hier eine Script-Vorlage zur Verfügung,
 mit der gezeigt wird, wie Adressen innerhalb eines bestimmten Radius ermittelt werden können.
-Diese Vorlage dient nur als Idee/Ansatz für ähnlichgelagerte Projekte! 
+Diese Vorlage dient nur als Idee/Ansatz für ähnlich gelagerte Projekte! 
 
 ### Live-Demo:
 https://raw.githack.com/plzTeam/carto-umkreis-preview/master/index.html
@@ -20,6 +20,11 @@ Zusätzlich wird die Filterung der Datensätze anhand eines Kategoriefeldes geze
 ### Verwendete Testdaten
 Es ist nicht möglich über diese App individuelle Daten einzupflegen, alle Testdaten werden 
 über die [Faker.js](https://github.com/marak/Faker.js/) Bibliothek erzeugt.
+Importfähige Grunddaten (bspw. via Excel) sollten folgende Spalten beinhalten:
+
+x | y |  city | name | category
+---|---|-----|------|-----
+Breitengrad | Längengrad | (text) | (text) | 1, 2 od. 3
 
 ## Warum Carto?
 Die Basisanwendung von Carto ist Open-Source und somit vorallem kostentechnisch skalierbar.
@@ -28,7 +33,7 @@ Carto hat außerdem seine Stärken im Umgang mit GIS-Daten und deren Zugänglich
 Die Daten können entweder über die SQL-API oder mit einer direkten PostgreSQL-Datenbankverbindung abgefragt und manipuliert werden.
 ### Carto beziehen
 + Der offizielle Anbieter ist [Carto.com](https://carto.com/)
-+ Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis der unten genannten Repository
++ Eine kostengünstige Alternative ist [getgeodb.com](https://getgeodb.com/) auf Basis des unten genannten Repository
 + Übrig bleibt das Open-Source-Repository auf [github/CartoDB](https://github.com/CartoDB) für das Aufsetzen einer eigenen Server-Instanz
 
 ### Interessante Verweise für die Weiterentwicklung   
