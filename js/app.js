@@ -107,28 +107,39 @@ window.onload = function () {
         $("#btn-run").on('click', () => {
             redrawMap();
         });
+        // onchange forms: trigger btn-run:click
+        $("#form-radius, #form-category").on("change", () => {
+            $("#btn-run").trigger("click");
+        });
         // onclose cartoModal: redraw()
         $("#cartoModal").on("hidden.bs.modal", function () {
             redrawMap();
         });
 
         // add-data
+        let insertLoops = 0;
+        let insertFails = 0;
         $(".btn-add").on('click', function(e, index) {
-            let loops = $(this).data('val');
-            for(let i = 0;i<=loops;i++) {
+            if(insertLoops > 0) return; // Abbruch wenn ein Insert läuft
+            insertLoops = $(this).data('val');
+            insertFails = 0;
+            function insertRow() {
                 let city = faker.address.zipCode() + ' ' + faker.address.city();
                 let name = faker.company.companyName();
                 let category = faker.datatype.number({'min': 1,'max': 3}).toString()
                 let x = faker.datatype.float({'min': min_x,'max': max_x}).toString()
                 let y = faker.datatype.float({'min': min_y,'max': max_y}).toString()
                 let q = `INSERT INTO addr001 (city, name, category, x, y, the_geom) VALUES ('${city}', '${name}', '${category}', '${x}', '${y}', ST_SetSRID(ST_MakePoint(${y}, ${x}), 4326))`;
-                console.log(q)
-                $.getJSON(apiUrl + '&q=' + q, function(data) {
-                    $.each(data.rows, function(key, val) {
-                        // do something!
-                    });
+                $.getJSON(apiUrl + '&q=' + q).done(() => {
+                    insertLoops--;
+                    if(insertLoops > 0) insertRow()
+                }).fail(() => {
+                    // Error: neuer Versuch
+                    insertFails++;
+                    if(insertLoops > 0 && insertFails < 1000) insertRow()
                 });
             }
+            insertRow();
         });
         // delete data
         $("#btnDelete").on('click', () => {

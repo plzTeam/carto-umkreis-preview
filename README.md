@@ -53,4 +53,7 @@ mit Map-Editor und vielen weiteren Features.
 Dieses Script bitte niemals selbst online stellen! 
 
 In diesem Script werden clientseitig SQL-Abfragen über eine zwar beschränkte
-aber offene Schnittstelle gesendet. Dieser Part muss serversite (bspw. über node) ausgelagert werden! 
+aber offene Schnittstelle gesendet. Dieser Part muss serversite (bspw. über node.js) ausgelagert werden!
+
+Der aktuell (Stand: 06/2021) verwendete API-Key und die Carto-Instanz wird ggf. in Zukunft
+nicht mehr funktionieren!
