@@ -1,7 +1,7 @@
 ## Carto SQL API – Umkreissuche  
 Wir stellen hier eine Script-Vorlage zur Verfügung,
 mit der gezeigt wird, wie Adressen innerhalb eines bestimmten Radius ermittelt werden können.
-Diese Vorlage dient nur als Idee/Ansatz für ähnlich gelagerte Projekte! 
+Diese Vorlage dient nur als Idee/Ansatz für ähnlich gelagerte Projekte! ([Wichtiger Hinweis](#wichtiger-hinweis))
 
 ### Live-Demo:
 https://raw.githack.com/plzTeam/carto-umkreis-preview/master/index.html
@@ -48,3 +48,9 @@ mit Map-Editor und vielen weiteren Features.
 + Projektion: die gängigen Koordinatensysteme für die visuelle Kartendarstellung
   sind nicht für Berechnungen im metrischen System nutzbar. Folglich muss zur Berechnung
   das Geometrie-Feld der Carto-Datenbank entsprechend transformiert werden.
+  
+# Wichtiger Hinweis
+Dieses Script bitte niemals selbst online stellen! 
+
+In diesem Script werden clientseitig SQL-Abfragen über eine zwar beschränkte
+aber offene Schnittstelle gesendet. Dieser Part muss serversite (bspw. über node) ausgelagert werden! 
