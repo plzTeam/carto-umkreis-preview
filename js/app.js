@@ -191,11 +191,7 @@ window.onload = function () {
         // delete data
         $("#btnDelete").on('click', () => {
             let q = `DELETE FROM addr001 WHERE locked IS NOT TRUE`;
-            $.getJSON(apiUrl + '&q=' + q, function(data) {
-                $.each(data.rows, function(key, val) {
-                    // do something!
-                });
-            });
+            $.getJSON(apiUrl + '&q=' + q);
         });
     });
 }
