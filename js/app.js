@@ -3,13 +3,15 @@ window.onload = function () {
     let apiKey = 'dquobtKU-xkjy30t2xVHTA';
     let apiUrl = 'https://toad.geodb.host/user/plzteam/api/v2/sql?api_key=' + apiKey;
 
-    let max_entity_count = 2000;
+    let max_entity_count = 1000;
 
     let center_lat = 50.7684,
         center_lon = 9.1061;
     let min_x = 49.23, max_x = 52.25,
         min_y = 7, max_y = 11.31
     let bbox = [[min_x, min_y],[max_x, max_y]];
+
+    let eCount = 0;
 
     faker.locale = "de";
 
@@ -32,7 +34,7 @@ window.onload = function () {
             setTimeout(() => {
                 let q = `SELECT COUNT(*) AS count FROM addr001`;
                 $.getJSON(apiUrl + '&q=' + q, function(data) {
-                    let eCount =  data.rows[0].count;
+                    eCount =  data.rows[0].count;
                     $("#entity-count").html('')
                     let eCountHtml = $("<b><span class='text-primary'>" + eCount + "</span> <span>&#47;</span> "+max_entity_count+"</b>");
                     $("#entity-count").append(eCountHtml);
@@ -190,7 +192,9 @@ window.onload = function () {
         });
         // delete data
         $("#btnDelete").on('click', () => {
-            let q = `DELETE FROM addr001 WHERE locked IS NOT TRUE`;
+            if(eCount <= 500) return; // Löschung nur wenn mehr als 500 Einträge vorhanden sind
+            let diff = (eCount-500);
+            let q = `DELETE FROM addr001 WHERE ctid IN (SELECT ctid FROM addr001 WHERE locked IS NOT TRUE ORDER BY cartodb_id DESC LIMIT ${diff})`;
             $.getJSON(apiUrl + '&q=' + q);
         });
     });
