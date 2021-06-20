@@ -55,6 +55,7 @@ window.onload = function () {
         // Draw Function
         let circle = L.circle();
         function redrawMap(lat = false, lon = false) {
+            console.log('redraw');
             // close popup
             $('.cartodb-popup-close-button').trigger('click');
             // init center
@@ -107,21 +108,21 @@ window.onload = function () {
                     let el = $(e.target);
                     $("#form-category").val(el.data('cat')).trigger('change')
                 })
-                // Popup-Button: neuer Mittelpunkt
-                $(document).on('mouseover', function(e) {
-                    let el = $(e.target);
-                    if(el.data('x') && el.data('y')) {
-                        el.on('click', () => {
-                            redrawMap(el.data('x'), el.data('y'));
-                        })
-                    }
-                });
             });
         }
         // init layers
         redrawMap();
         $("#btn-run").on('click', () => {
             redrawMap();
+        });
+        // Popup-Button: neuer Mittelpunkt
+        $(document).on('mouseover', function(e) {
+            let el = $(e.target);
+            if(el.data('x') && el.data('y')) {
+                el.on('click', () => {
+                    redrawMap(el.data('x'), el.data('y'));
+                })
+            }
         });
         // onchange forms: trigger btn-run:click
         $("#form-radius, #form-category").on("change", () => {
