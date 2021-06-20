@@ -28,7 +28,6 @@ window.onload = function () {
         })
         let map = vis.getNativeMap();
         let marker = L.marker();
-
         // get entity count
         function refreshEntityCount () {
             setTimeout(() => {
@@ -50,8 +49,9 @@ window.onload = function () {
                 });
             }, 2000);
         };
-        refreshEntityCount();
-
+        $("#cartoModal").one('shown.bs.modal', () => {
+            refreshEntityCount();
+        });
         // Draw Function
         let circle = L.circle();
         function redrawMap(lat = false, lon = false) {
