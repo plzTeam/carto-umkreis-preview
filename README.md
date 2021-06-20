@@ -43,7 +43,7 @@ mit Map-Editor und vielen weiteren Features.
 
 ### Interessante Verweise für die Weiterentwicklung   
 + https://github.com/CartoDB/cartodb-nodejs
-+ https://www.npmjs.com/package/sqlstring - aktuell fehlt SQL-Escape von "Special Characters",
++ https://www.npmjs.com/package/sqlstring - im aktuellen Script fehlt SQL-Escape von "Special Characters",
   dies führt bei manchen zufällig generierten Namen zu SQL-Fehlern (bspw. dieses Zeichen '&')
 
 ### Bekannte Stolpersteine
