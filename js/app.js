@@ -7,8 +7,8 @@ window.onload = function () {
 
     let center_lat = 50.7684,
         center_lon = 9.1061;
-    let min_x = 48.64, max_x = 52.25,
-        min_y = 5.68, max_y = 11.31
+    let min_x = 49.23, max_x = 52.25,
+        min_y = 7, max_y = 11.31
     let bbox = [[min_x, min_y],[max_x, max_y]];
 
     faker.locale = "de";
@@ -18,10 +18,11 @@ window.onload = function () {
         search: false,
         center_lat: center_lat,
         center_lon: center_lon,
-        zoom: 9
+        zoom: 10
     }).done(function(vis, layers){
         vis.map.set({
-            minZoom: 7
+            minZoom: 8,
+            maxZoom: 12
         })
         let map = vis.getNativeMap();
         let marker = L.marker();
